@@ -20,7 +20,7 @@ public interface StockController {
     @GetMapping(BASE_URL + "/stocks/{stockId}")
     StockBean getStock(@PathVariable String stockId);
 
-    @GetMapping(BASE_URL + "/{currencyId}/{date}")
+    @GetMapping(BASE_URL + "/{stockId}/{date}")
     EstimateBean getEstimate(@PathVariable String stockId, @PathVariable String date);
 
     @GetMapping(BASE_URL)
